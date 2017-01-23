@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { NewestComponent } from './newest/newest.component';
+import { ListPostComponent } from './list-post/list-post.component';
 
 @NgModule({
   declarations: [ // components go here
     AppComponent,
     WelcomeComponent,
-    NewestComponent
+    NewestComponent,
+    ListPostComponent
   ],
   imports: [ // modules go here
     BrowserModule,
