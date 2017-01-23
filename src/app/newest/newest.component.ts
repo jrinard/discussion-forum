@@ -21,7 +21,6 @@ export class NewestComponent implements OnInit{
   }
 
   goToDetailPage2(clickedPost: Post) {
-    console.dir(clickedPost);
     this.router.navigate(['posts', clickedPost.id]);
   };
 
