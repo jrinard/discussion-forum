@@ -1,3 +1,7 @@
-<p>
-  list-post works!
-</p>
+<h1>List Post</h1>
+
+<li *ngFor="let currentPost of childPostList">
+  <h3>{{currentPost.title}}</h3>
+  <h4>{{currentPost.details}}</h4>
+  <h4>by {{currentPost.username}}</h4>
+</li>

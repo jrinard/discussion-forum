@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Post } from '../post.model';
 
 @Component({
-  selector: 'app-list-post',
+  selector: 'list-post',
   templateUrl: './list-post.component.html',
   styleUrls: ['./list-post.component.css']
 })
-export class ListPostComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class ListPostComponent {
+  @Input() childPostList: Post[];
 }

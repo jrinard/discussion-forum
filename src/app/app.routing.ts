@@ -1,7 +1,7 @@
-import { ModuleWithProviders } from "@angular/core";
-import { Routes, RouterModule} from "@angular/router";
-import { WelcomeComponent } from "./welcome/welcome.component";
-import { NewestComponent } from "./newest/newest.component";
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule} from '@angular/router';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { NewestComponent } from './newest/newest.component';
 
 const appRoutes: Routes = [
   {
