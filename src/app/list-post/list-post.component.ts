@@ -8,4 +8,10 @@ import { Post } from '../post.model';
 })
 export class ListPostComponent {
   @Input() childPostList: Post[];
+
+  @Output() detailSender = new EventEmitter();
+
+  goToDetailPage(post: Post) {
+    this.detailSender.emit(post);
+  }
 }

@@ -8,13 +8,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { NewestComponent } from './newest/newest.component';
 import { ListPostComponent } from './list-post/list-post.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
 
 @NgModule({
   declarations: [ // components go here
     AppComponent,
     WelcomeComponent,
     NewestComponent,
-    ListPostComponent
+    ListPostComponent,
+    PostDetailComponent
   ],
   imports: [ // modules go here
     BrowserModule,

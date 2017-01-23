@@ -2,5 +2,5 @@
 
 
 <list-post
-  [childPostList]="posts"><!-- needs passed down to list from newest comp -->
+  [childPostList]="posts" (detailSender)="goToDetailPage2($event)"><!-- needs passed down to list from newest comp, posts needs to match comp and assign to child post -->
 </list-post>

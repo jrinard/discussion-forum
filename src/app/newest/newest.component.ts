@@ -12,13 +12,18 @@ import { PostService } from '../post.service';
   providers: [PostService]
 })
 export class NewestComponent implements OnInit{
-  posts: Post[];
+  posts: Post[]; // assigning variable
 
   constructor(private router: Router, private postService: PostService) {}
 
   ngOnInit(){
-    this.posts = this.postService.getPosts();
+    this.posts = this.postService.getPosts();// returns array of post objects and assigns to posts
   }
+
+  goToDetailPage2(clickedPost: Post) {
+    console.dir(clickedPost);
+    this.router.navigate(['posts', clickedPost.id]);
+  };
 
 
 }
