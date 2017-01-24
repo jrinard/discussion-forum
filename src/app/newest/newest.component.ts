@@ -18,6 +18,7 @@ export class NewestComponent implements OnInit{
 
   ngOnInit(){
     this.posts = this.postService.getPosts();// returns array of post objects and assigns to posts
+    // this.postService.addPost("Test", "Testy Test", "Testy McTesterson", 4);// creates post everytime you on init
   }
 
   goToDetailPage2(clickedPost: Post) {

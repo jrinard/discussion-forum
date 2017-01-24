@@ -19,5 +19,8 @@ export class PostService {
     }
   }
 
+  addPost(title: string, description: string, username: string, id: number) {
+    POSTS.push(new Post(title, description, username, id));
+  }
 
 }
